@@ -1,5 +1,3 @@
-
-
 programa {
 
   inclua biblioteca Util
@@ -63,3 +61,4 @@ programa {
     }
   }
 }
+
