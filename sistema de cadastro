@@ -13,8 +13,8 @@ programa {
     escreva("|                                 SISTEMA DE CADASTRO                                   |\n")
     escreva("'**************************************************************************************'\n")
 
-    escreva(" 1 - Cadrastar novo cliente\n")
-    escreva(" 2 - Visualizar clienter cadastrados\n")
+    escreva(" 1 - Cadastrar novo cliente\n")
+    escreva(" 2 - Visualizar cliente cadastrados\n")
     escreva(" 3 - Sair do sistema\n")
 
     escreva(".**************************************************************************************.\n")
@@ -44,7 +44,7 @@ programa {
 
             //Retorna para o menu inicio
             inicio()
-            pare
+            pare1
         }
 
         caso "2":
