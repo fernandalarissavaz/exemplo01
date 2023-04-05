@@ -2,8 +2,8 @@ programa {
 
   inclua biblioteca Util
 
-    cadeia opcao, nome_cliente
-    inteiro idade 
+    cadeia opcao, nome_cliente[8]
+    inteiro idade[8], quant = 0, n 
 
     funcao inicio() {
 
@@ -53,12 +53,61 @@ programa {
               escreva("|                                 CLIENTES CADASTRADOS                                 |\n")
               escreva("'**************************************************************************************'\n")
 
+              para(n = 0; n < quant; n++)
+              {
+                escreva("Nº: ", n+1, "-", nome_cliente[n], " - idade,", idade[n], "\n")
+              }
+
               escreva("Nº 01 - ", nome_cliente, " - Idade: ", idade, "\n")
 
               escreva(".**************************************************************************************.\n")
               Util.aguarde(5000) //Aguarde 05 segundos
               inicio()
+              pare
+        }
+
+        caso "3":
+        {
+              limpa()
+              escreva("Saindo do sistema em 05 segundos...")
+              Util.aguarde(1000)
+
+              limpa()
+              escreva("Saindo do sistema em 04 segundos...")
+              Util.aguarde(1000)
+
+              limpa()
+              escreva("Saindo do sistema em 03 segundos...")
+              Util.aguarde(1000)
+
+              limpa()
+              escreva("Saindo do sistema em 02 segundos...")
+              Util.aguarde(1000)
+
+              limpa()
+              escreva("Saindo do sistema em 01 segundos...")
+              Util.aguarde(1000)
+
+              limpa()
+              escreva("Até a próxima!!! \n\n\n")
+
+              pare
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
   }
+}
+
 }
 
