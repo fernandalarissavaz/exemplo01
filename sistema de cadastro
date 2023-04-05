@@ -10,7 +10,7 @@ programa {
     limpa()
 
     escreva(".**************************************************************************************.\n")
-    escreva("|                                 SISTEMA DE CADASTO                                   |\n")
+    escreva("|                                 SISTEMA DE CADASTRO                                   |\n")
     escreva("'**************************************************************************************'\n")
 
     escreva(" 1 - Cadrastar novo cliente\n")
@@ -27,15 +27,17 @@ programa {
         {
             limpa()
             escreva("Informe o nome do cliente:\n")
-            leia(nome_cliente)
+            leia(nome_cliente[quant])
 
 
             limpa()
-            escreva("Qual a idade do(a) cliente ", nome_cliente, ":\n")
-            leia(idade)
+            escreva("Qual a idade do(a) cliente ", nome_cliente[quant], ":\n")
+            leia(idade[quant])
 
 
             limpa()
+            quant++
+
             //Exibe mensagem de usuário cadastrado com sucesso
             escreva("AVISO: Usuário cadastrado com sucesso!")
             Util.aguarde(3000)
@@ -57,8 +59,6 @@ programa {
               {
                 escreva("Nº: ", n+1, "-", nome_cliente[n], " - idade,", idade[n], "\n")
               }
-
-              escreva("Nº 01 - ", nome_cliente, " - Idade: ", idade, "\n")
 
               escreva(".**************************************************************************************.\n")
               Util.aguarde(5000) //Aguarde 05 segundos
