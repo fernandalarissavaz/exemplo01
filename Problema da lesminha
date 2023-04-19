@@ -3,7 +3,7 @@ programa {
   inteiro altura 
   funcao inicio() {
 
-    escreva ("Qual é a altura da parede?\n")
+    escreva ("Informe a altura da parede:\n")
     leia(altura)
     limpa()
 
