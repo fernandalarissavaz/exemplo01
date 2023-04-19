@@ -1,0 +1,25 @@
+programa {
+
+  inteiro altura 
+  funcao inicio() {
+
+    escreva ("Qual é a altura da parede?\n")
+    leia(altura)
+    limpa()
+
+    se(altura == 1)
+    {
+      escreva ("A pobre lesminha levará 1 dia para subir a parede ", altura, " metros ")
+    }
+      senao
+      se (altura <= 3)
+      {
+        escreva ("A pobre lesminha levará 1 dia para subir a parede de ", altura, " metros  ")
+      }
+    
+    senao {
+      escreva(" A pobre lesminha levará ", altura - 2, " dias para subir a parede de ", altura, " metros ")
+    }
+    
+  }
+}
